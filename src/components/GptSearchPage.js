@@ -5,9 +5,9 @@ import { BACKGROUND_IMG } from "../utils/constants";
 
 const GptSearchPage = () => {
   return <div>
-    <div className="absolute w-full -z-10">
+    <div className="fixed w-full -z-10">
         <img
-          className="w-screen h-screen sm:w-screen sm:h-screen"
+          className="h-fit sm:w-screen sm:h-screen w-fit"
           src={BACKGROUND_IMG}
           alt="background"
         />
