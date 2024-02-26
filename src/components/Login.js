@@ -96,7 +96,7 @@ const Login = () => {
       <Header />
       <div className="absolute w-full">
         <img
-          className="w-screen h-screen sm:w-screen sm:h-screen"
+          className="w-screen h-screen object-cover"
           src={BACKGROUND_IMG}
           alt="background"
         />
@@ -107,7 +107,7 @@ const Login = () => {
           onSubmit={(e) => {
             e.preventDefault();
           }}
-          className="w-3/12 p-12 bg-black absolute text-white my-36 mx-auto right-0 left-0 z-0 bg-opacity-70 rounded-lg"
+          className="md:w-3/12 p-12 bg-black absolute text-white my-36 mx-auto right-0 left-0 z-0 bg-opacity-70 rounded-lg"
         >
           <h3 className="my-3 mx-0 p-4 font-bold text-4xl max-sm:text-xl">
             {signIn ? "Sign In" : "Sign Up"}

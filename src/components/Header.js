@@ -59,29 +59,29 @@ const Header = () => {
 
   return (
     <>
-      <div className="absolute flex z-50  my -7 bg-gradient-to-b from-black w-full h-24 justify-between">
-        <div className="z-50  my -7 bg-gradient-to-b from-black">
-          <img className="w-44" src={LOGO} alt="logo" />
+      <div className="absolute flex z-50  my-0 bg-gradient-to-b from-black w-full h-24 flex-col md:flex-row md:justify-between" >
+        <div className="z-50 mx-auto md:mx-0">
+          <img className="md:w-44 w-40" src={LOGO} alt="logo" />
         </div>
         {user && (
-          <div className="flex gap-2 my-4 align-middle">
-            {gptSearch && <select className="py-1 px-3 my-4" onChange={handleLanguageChange}>
+          <div className="flex gap-2 my-0 md:my-4 justify-between md:justify-normal">
+            {gptSearch && <select className="md:py-1 px-3 md:my-4 mx-1 rounded-md" onChange={handleLanguageChange}>
               {SUPPORTED_LANGUAGES.map(lang => <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>) }
             </select>}
             <button
-              className="px-4 py-2 m-2 bg-purple-800 rounded-lg text-white font-bold"
+              className="md:px-4 px-2 md:py-2 py-3 md:m-2 mx-1 bg-purple-800 rounded-lg text-white md:font-bold"
               onClick={handleGptSearch}
             >
               {!gptSearch ? "GPT Search" : "Home Page"}
             </button>
             <img
-              className="rounded-lg"
+              className="rounded-lg hidden md:inline-block"
               src={user?.photoURL}
               alt={user.displayName}
             />
             <button
               onClick={handleSignOut}
-              className="bg-red-600 text-black my-4 px-2 h-8 rounded-lg"
+              className="bg-red-600 text-black md:my-4 my-0 px-1  md:px-2 rounded-lg mx-1"
             >
               Sign Out
             </button>

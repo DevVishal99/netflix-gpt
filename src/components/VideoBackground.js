@@ -7,7 +7,8 @@ const VideoBackground = ({ movieId }) => {
   useMovieTrailer(movieId);
 
   return (
-    <div>
+    <div className="bg-black">
+      <div className="pt-[30%] md:pt-0">
       <iframe
         className="w-screen aspect-video"
         src={
@@ -16,6 +17,7 @@ const VideoBackground = ({ movieId }) => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
         allowFullScreen
       ></iframe>
+      </div>
     </div>
   );
 };
