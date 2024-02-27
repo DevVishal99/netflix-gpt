@@ -19,7 +19,6 @@ const GptSearchBar = () => {
   }
 
   const handleSraechBtn = async () => {
-    console.log(searchText.current.value);
 
     const gptQurey =
       "Act as a movie recommendation system and suggest the movie for the query:" +
@@ -30,14 +29,11 @@ const GptSearchBar = () => {
       model: "gpt-3.5-turbo",
       messages: [{ role: "user", content: gptQurey }],
     });
-    // console.log(gptResults.choices[0].message.content);
     const gptMovies = gptResults.choices[0].message.content.split(",");
 
     const promiseArray = gptMovies.map(movie => getTmdbMovies(movie));
 
     const movies = await Promise.all(promiseArray);
-
-    console.log(movies);
 
     dispactch(addGptMoviesResult({movieNames:gptMovies, movieResults :movies}));
 
