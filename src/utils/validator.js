@@ -9,7 +9,7 @@ export const checkFieldsValidation = (email, password) => {
   if (password === "") return "⚠️Please Enter Password";
 
   if (!isEmailValid) return "⚠️Email is not Valid. Check Format.";
-  if (!isPasswordValid) return "⚠️Password is not Valid. Please Check Again.";
+  if (!isPasswordValid) return "⚠️Password is not Valid. Please Use Strong Password";
 
   return null;
 };
