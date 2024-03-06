@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "build",
+    "site": "netfix-gpt-36d58",
     "ignore": [
       "firebase.json",
       "**/.*",

@@ -22,8 +22,14 @@ const Trailer = () => {
     <>
       <div className="bg-black h-screen">
         <div className="flex">
+        <button
+            className="bg-purple-800 rounded-lg text-white md:font-bold px-4 py-2 md:ml-[92%] mt-4 relative z-30"
+            onClick={handleGptSearch}
+          >
+            Back
+          </button>
           <iframe
-            className="w-screen aspect-video mt-10"
+            className="md:w-screen aspect-video -mt-[5%] absolute w-screen h-screen"
             src={
               "https://www.youtube.com/embed/" +
               trailerInfo?.key +
@@ -33,12 +39,7 @@ const Trailer = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
             allowFullScreen
           ></iframe>
-          <button
-            className="md:px-4 px-2 md:py-2 py-3 md:m-2 mx-1 bg-purple-800 rounded-lg text-white md:font-bold absolute"
-            onClick={handleGptSearch}
-          >
-            Home Page
-          </button>
+          
         </div>
       </div>
     </>

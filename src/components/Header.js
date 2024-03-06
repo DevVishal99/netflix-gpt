@@ -7,7 +7,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
 import { LOGO, SUPPORTED_LANGUAGES } from "../utils/constants";
 import { setGptSearchClick } from "../utils/gptSlice";
-import lang from "../utils/languageConstants";
 import { selectedLanguage } from "../utils/configSlice";
 
 const Header = () => {
