@@ -1,5 +1,5 @@
 # About Netflix-GPT:
-**Aouther - Vishal Balekudri**
+**Aouther - Vishal Balekudri**<br>
 Netflix-GPT is a movie recommendation website that's crafted to resemble Netflix.<br>
 Experience the latest movie releases showcased on the home page, and with just a click on any movie card, 
 <br>immerse yourself in itstrailer.<br>
