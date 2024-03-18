@@ -12,8 +12,8 @@ const MoviesList = ({ title, movies }) => {
         <div className="flex overflow-x-scroll">
           <div className="flex md:gap-4 gap-2">
             {movies.map((movie) => (
-              <Link to={"/trailer/"+movie?.id}>
-              <MovieCard key={movie?.id} movie={movie} />
+              <Link key={movie?.id} to={"/trailer/"+movie?.id}>
+              <MovieCard  movie={movie} />
               </Link>
             ))}
           </div>
